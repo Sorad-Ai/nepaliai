@@ -330,7 +330,7 @@ const C1Page: NextPage<HomePageProps> = ({ searchParams }) => {
 
                           {/* For labels */}
                           {showAccuracy && (accuracyText || gestureText) && (
-                            <p className="labels">
+                            <p className="labels1">
                               {accuracyText}
                               {gestureText && (
                                 <>
