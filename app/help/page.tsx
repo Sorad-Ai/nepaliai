@@ -138,6 +138,9 @@ const HelpPage: React.FC = () => {
           <h2 className={styles.sectionTitle}>Troubleshooting</h2>
           <p>Having trouble? Try these tips:</p>
           <ul>
+          <li>
+            <b> Try refreshing page </b>
+            </li>
             <li>
               Ensure good lighting and adjust camera settings if tracking is
               inaccurate.
