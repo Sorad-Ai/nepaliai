@@ -1,0 +1,79 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.textContent {
+  margin-bottom: 1.5rem; /* Add margin for better spacing */
+}
+
+.textContent p {
+  margin: 0.5rem 0; /* Ensure proper spacing for paragraphs */
+}
+
+/* List styles */
+.textContent ul {
+  padding: 0; /* Remove padding */
+}
+
+.textContent ul li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 1rem; /* Space between list items */
+  gap: 1rem; /* Space between image and text */
+}
+
+.textContent img {
+  /* width: 80px; Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.textContent a {
+  color: #00aaff; /* Link color */
+  text-decoration: underline; /* Underline the link */
+}
+
+.textContent a:hover {
+  color: #0088cc; /* Darker shade for hover effect */
+  text-decoration: none; /* Optional: remove underline on hover */
+}
+
+.gridContainer {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.gridItem {
+  text-align: center;
+}
+
+.gridItem img {
+  border-radius: 10px;
+}
+
+.video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}

@@ -1,0 +1,288 @@
+/* Container: Use flexbox for layout */
+.container {
+  display: flex;
+  flex-direction: row; /* Set to row for default layout */
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+  height: calc(
+    100vh - 75px
+  ); /* Adjust height to fit within the viewport minus navbar height */
+  box-sizing: border-box;
+  max-width: 99%;
+}
+
+h4 {
+  position: absolute;
+  left: 10px;
+  margin-top: 4px;
+}
+
+/* Main wrapper div styling */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%; /* Set to 70% for main content */
+  margin-top: 5px;
+  background-color: #363232;
+  border-radius: 8px;
+}
+
+/* Title above the main div */
+.main-title {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 0px; /* Optional: for spacing below the title */
+  font-weight: bold; /* Optional: makes the title bold */
+}
+
+/* Main div styling: auto height based on content, non-scrollable */
+.main {
+  /* padding: 10px; */
+  /* padding-bottom: 8px; */
+  /* background-color: #1e1e1e; */
+  color: #e0e0e0;
+  height: 80vh;
+  overflow: hidden;
+  /* position: relative; */
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/* Horizontal bar with fullscreen button */
+.horizontal-bar {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* border-top: 1px solid #444; */
+  padding-top: 0px;
+  padding-left: 5px;
+}
+
+/* Fullscreen button with smaller size and less padding */
+.btn {
+  color: #ffffff;
+  border: none;
+  padding: 0px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+  height: 27px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.fullscreen-btn {
+  background-color: seagreen;
+}
+
+.cam-btn {
+  background-color: rgba(235, 76, 18, 0.795);
+}
+
+.btn i {
+  font-size: 18px;
+}
+
+/* Dark Theme Scrollbar for .cards */
+.cards {
+  width: 30%; /* Set to 30% width */
+  /* padding-top: 20px; */
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow-y: auto;
+  height: calc(100vh - 75px); /* Same height as container to avoid overflow */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #555 #2b2b2b; /* Firefox */
+  z-index: 1;
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+.cards::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.cards::-webkit-scrollbar-track {
+  background: #2b2b2b; /* Background of the scrollbar track */
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar handle */
+  border-radius: 8px; /* Rounded corners for the scrollbar handle */
+}
+
+.cards::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Color of the scrollbar handle on hover */
+}
+
+/* Card styling */
+.card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background-color: #383838;
+  color: #e0e0e0;
+}
+
+.horizontal-bar {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  position: relative;
+  background-color: #363232;
+  /* border-radius: 10px; */
+  padding-bottom: 5px;
+  flex-direction: row-reverse;
+}
+
+.horizontal-bar::before {
+  position: absolute;
+  top: 5px; /* Adjust position inside the parent */
+  right: 20px;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 15px;
+  z-index: 1000;
+}
+
+.horizontal-bar::before {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: crimson;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap; /* Allows the labels to wrap if needed */
+  padding-left: 0px;
+  padding-right: 28px;
+  padding-top: 5px;
+}
+
+.controls label {
+  display: flex;
+  align-items: center; /* Aligns checkbox and text vertically */
+  margin: 0 13px; /* Only left and right margins */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  gap: 5px;
+}
+
+.content-wrapper {
+  height: 96%;
+}
+
+/* Responsive layout */
+@media (max-width: 1079px) {
+  .container {
+    flex-direction: column; /* Stack vertically on small screens */
+    height: auto; /* Auto height for mobile */
+  }
+
+  .main-wrapper {
+    width: 100%; /* Full width for main content */
+  }
+
+  .cards {
+    width: 100%; /* Full width for cards */
+    height: auto; /* Auto height on smaller screens */
+  }
+
+  .content-wrapper {
+    height: 95%;
+  }
+}
+
+@media (min-width: 1079) {
+  .container {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+
+  .main-wrapper {
+    width: 70%; /* 70% width for main content */
+  }
+
+  .cards {
+    width: 30%; /* 30% width for cards */
+  }
+
+  .content-wrapper {
+    height: 95%;
+  }
+}
+
+@media (max-width: 467px) {
+  .content-wrapper {
+    height: 95%;
+  }
+}
+
+/* The overlay covers the entire screen but is behind the popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  z-index: 1000; /* Lower z-index than the popup */
+}
+
+.camera {
+  padding-top: 5px;
+}
+
+.labels {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  z-index: 3;
+  text-align: left;
+}
+
+@media (min-width: 1080px) {
+  .hide-on-large-screens {
+    display: none;
+  }
+
+  .content-wrapper {
+    height: 95%;
+  }
+}
+
+.line-cont {
+  position: relative;
+  display: flex;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  z-index: 4;
+}
+
+.red-line {
+  background-color: #FFD700;
+  left: 33%;
+}
+
+.blue-line {
+  background-color: #4C6EF5;
+  left: 66%;
+}

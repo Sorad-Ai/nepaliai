@@ -1,0 +1,114 @@
+/* search-Style.css */
+
+/* General body styling for dark theme */
+body {
+  color: #e0e0e0; /* Light text color for readability */
+  margin: 0;
+}
+
+/* Container for the search results */
+.search-container {
+  padding: 20px;
+  margin: auto;
+}
+
+/* Heading styling */
+.search-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #e0e0e0; /* Light color for headings */
+}
+
+/* Container for cards */
+.card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  margin-bottom: 100px;
+  row-gap: 10px;
+  column-gap: 0px;
+  justify-content: center;
+}
+
+/* Card styling */
+.div-car {
+  border-radius: 16px; /* Larger border-radius for more pronounced curved corners */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  max-height: max-content;
+}
+
+.card-div:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+  margin: 0 auto; /* Centers the image within the card */
+  border-radius: 8px; /* Slightly rounded corners for the image */
+}
+
+.card-title {
+  color: #e0e0e0; /* Light color for card titles */
+  margin: 15px;
+  text-align: center;
+}
+
+.skeleton-card {
+  background-color: #333;
+  height: 200px;
+  border-radius: 16px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeleton-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #444 25%, #666 50%, #444 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+.skeleton-title {
+  width: 80%;
+  height: 16px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #444 25%, #666 50%, #444 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .card-div {
+    max-width: 100%;
+  }
+
+
+  .card-title {
+    font-size: 1px; /* Adjusted font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container h2 {
+    font-size: 22px;
+  }
+
+  .card-title {
+    font-size: 16px; /* Further adjusted for smaller screens */
+  }
+}

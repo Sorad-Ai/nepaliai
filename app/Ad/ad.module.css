@@ -1,0 +1,9 @@
+.adContainer {
+  position: fixed; /* Fix the position of the ad container */
+  bottom: 0; /* Align it to the bottom of the viewport */
+  left: 0;
+  width: 100%;
+  /* background-color: #fff; Background color for better visibility */
+  z-index: 1000; /* Ensure it appears above other content */
+  border-top: 1px solid #ddd; /* Optional: Add a border for separation */
+}

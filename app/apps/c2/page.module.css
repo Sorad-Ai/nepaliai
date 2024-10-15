@@ -1,0 +1,60 @@
+/* page.module.css */
+
+/* Styles for the popup overlay */
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out, z-index 0s 0.3s; /* Transition timing for opacity */
+  }
+  
+  /* Popup is visible */
+  .visible {
+    opacity: 1;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, z-index 0s;
+  }
+  
+  /* Popup is hidden */
+  .hidden {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out, z-index 0s 0.3s;
+  }
+  
+  /* Popup content */
+  .popup {
+    background: #2b2b2b;
+    padding: 0px;
+    /* padding-top: 5px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    /* min-width: 50%; */
+    padding-bottom: 5px;
+  }
+  
+  /* Close button styles */
+  .closeButton {
+    margin-top: 0px;
+    padding: 0px 5px; 
+    background-color: rgba(235, 76, 18, 0.795);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 3px;
+  }
