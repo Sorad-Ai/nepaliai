@@ -206,6 +206,8 @@ h4 {
 @media (min-width: 1079) {
   .container {
     flex-direction: row; /* Row layout for larger screens */
+    height: auto;
+
   }
 
   .main-wrapper {
