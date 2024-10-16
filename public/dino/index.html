@@ -2621,7 +2621,7 @@ html[subframe] body {
   
       // Listen for custom event from the parent window to trigger the jump
       window.addEventListener('message', (event) => {
-        if (event.data === 'Jump') {
+        if (event.data === 'Up') {
           triggerJump();
         } else if (event.data === "Reload") {
           setTimeout(() => {

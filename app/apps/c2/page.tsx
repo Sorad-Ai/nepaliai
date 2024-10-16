@@ -213,7 +213,7 @@ const C1Page: NextPage<HomePageProps> = ({ searchParams }) => {
                             switch (gestureDetected) {
                               case "Up":
                                 iframeRef.current.contentWindow.postMessage(
-                                  "Jump",
+                                  "Up",
                                   "*"
                                 );
                                 break;
