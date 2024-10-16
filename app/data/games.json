@@ -135,5 +135,24 @@
     "isAi": false,
     "short": "subway-surfers",
     "src": "https://szhong.4399.com/4399swf//upload_swf/ftp35/liuxinyu/20210324/jj01/index.html"
+  },
+  {
+  "sn": 10,
+    "title": "Hills of Steel",
+    "img": "https://play-lh.googleusercontent.com/FlflKi7ZDH-05b1MYMg3krQhNW5UaLle6WynSlIawYuFJxBcos84-7WgF6mhoNlDmhvZ=w240-h480-rw",
+    "description": "Tank Army war",
+    "keywords": [
+      "tank",
+      "missile",
+      "army",
+      "2d"
+    ],
+    "link": "/apps/c2",
+    "view": 1254,
+    "isAi": false,
+    "short": "hills-of-steel",
+    "src": "https://kdata1.com/2024/05/hillsofsteel/"
   }
+  
+  
 ]
