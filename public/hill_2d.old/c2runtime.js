@@ -4968,7 +4968,7 @@ quat4.str = function(a) {
                         console.error("Error extracting image '" + src_ + "' from expansion file: ", e);
                 });
             } else {
-                img_.crossOrigin = "anonymous"; // required for Arcade sandbox compatibility
+                img_.crossOrigin = ""; // required for Arcade sandbox compatibility
                 this.queueImageLoad(img_, src_); // use a queue to avoid requesting all images simultaneously
             }
         }
