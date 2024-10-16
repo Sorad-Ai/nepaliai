@@ -83,9 +83,25 @@
       "game"
     ],
     "link": "/apps/c2",
-    "view": 1053,
+    "view": 1055,
     "isAi": true,
     "short": "level-devil",
     "src": "/level-devil/index.html"
+  },
+  {
+    "sn": 6,
+    "title": "Moto X3M Bike Race",
+    "img": "https://play-lh.googleusercontent.com/AbQMuT4ncBfWDqNF-4ubmfaRag59nrW3fJARDsHK51_PENScmWCnMFeQX81wfPlfGBo=w240-h480-rw",
+    "description": "Bike racing level game",
+    "keywords": [
+      "game",
+      "Bike",
+      "Action"
+    ],
+    "link": "/apps/c2",
+    "view": 1100,
+    "isAi": true,
+    "short": "moto-x3m",
+    "src": "/moto-x3m/index.html"
   }
 ]
