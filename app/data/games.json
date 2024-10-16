@@ -73,5 +73,19 @@
     "view": 1e+36,
     "isAi": false,
     "short": "help"
+  },
+  {
+    "sn": 6,
+    "title": "Level Devil",
+    "img": "/level-devil/thumb_1.jpg",
+    "description": "Level devil game",
+    "keywords": [
+      "game"
+    ],
+    "link": "/apps/c2",
+    "view": 1053,
+    "isAi": true,
+    "short": "level-devil",
+    "src": "/level-devil/index.html"
   }
 ]
