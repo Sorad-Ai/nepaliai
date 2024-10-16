@@ -138,7 +138,7 @@ const HelpPage: React.FC = () => {
           <h2 className={styles.sectionTitle}>Troubleshooting</h2>
           <p>Having trouble? Try these tips:</p>
           <ul>
-          <li style={{color: 'green'}}>
+          <li style={{color: 'blue'}}>
              Try refreshing page. Some games are not supported in mobile.
             </li>
             <li>
