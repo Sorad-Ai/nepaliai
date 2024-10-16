@@ -54,7 +54,7 @@
       "test"
     ],
     "link": "/apps/p1",
-    "view": 2001,
+    "view": 1e+23,
     "isAi": true,
     "short": "practice"
   },
@@ -70,8 +70,26 @@
       "solution"
     ],
     "link": "/help",
-    "view": 2052,
+    "view": 1e+36,
     "isAi": false,
     "short": "help"
+  },
+  {
+    "sn": 6,
+    "title": "Hill Run 2d",
+    "img": "/hill_2d/icon-256.png",
+    "description": "Hill climbing 2d game",
+    "keywords": [
+      "hill",
+      "climbing",
+      "mobile",
+      "2d",
+      "kids"
+    ],
+    "link": "/apps/c2",
+    "view": 1052,
+    "isAi": true,
+    "short": "hill-race-2d",
+    "src": "/hill_2d/index.html"
   }
 ]

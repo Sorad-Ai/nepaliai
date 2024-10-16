@@ -62,7 +62,7 @@
     // Listen for custom event from the parent window to trigger different key presses
     window.addEventListener("message", (event) => {
       switch (event.data) {
-        case "Jump":
+        case "Up":
           focusAndPressKey(38, "ArrowUp"); // Press 'ArrowUp' for Jump
           break;
         case "Right":
@@ -79,12 +79,6 @@
           break;
         case "Wow":
           focusAndPressKey(32, "Space");
-        case "Reload": // Added case for Reload gesture
-          const iframe = document.getElementById("gameIframe");
-          if (iframe) {
-            iframe.contentWindow.location.reload(); // Refresh the iframe content
-          }
-          break;
         default:
           break;
       }
