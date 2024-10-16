@@ -23,25 +23,25 @@
       "dino"
     ],
     "link": "/apps/c2",
-    "view": 953,
+    "view": 951,
     "isAi": true,
     "src": "/dino/index.html",
     "short": "dino-game"
   },
   {
     "sn": 3,
-    "title": "Hill Climb Racing",
-    "img": "https://play-lh.googleusercontent.com/N0UxhBVUmx8s7y3F7Kqre2AcpXyPDKAp8nHjiPPoOONc_sfugHCYMjBpbUKCMlK_XUs=w240-h480-rw ",
-    "description": "Hill Climb Game",
+    "title": "Stunt Bike Extreme",
+    "img": "https://play-lh.googleusercontent.com/NRovxU1rnnI2BzDw989gmkSb8DOnEmgybKJysHKE4-5WSWonNXFwGJGDXMppfxHBkI4=w240-h480-rw",
+    "description": "action level bike game",
     "keywords": [
-      "Car",
-      "2d"
+      "bike",
+      "adventure"
     ],
     "link": "/apps/c2",
     "view": 902,
     "isAi": false,
-    "src": "https://1games.io/game/hill-climb-race/",
-    "short": "hill-climb-racing"
+    "src": "https://g.igroutka.ru/games/793/2xTdm6GrXEuN0Kwq/fe831138-3321-40ed-b8cd-f1c482091e04/index.html",
+    "short": "stunt-bike-extreme"
   },
   {
     "sn": 4,
@@ -89,7 +89,7 @@
     "src": "/level-devil/index.html"
   },
   {
-    "sn": 7,
+    "sn": 6,
     "title": "Moto X3M Bike Race",
     "img": "https://play-lh.googleusercontent.com/AbQMuT4ncBfWDqNF-4ubmfaRag59nrW3fJARDsHK51_PENScmWCnMFeQX81wfPlfGBo=w240-h480-rw",
     "description": "Bike racing level game",
@@ -103,21 +103,5 @@
     "isAi": true,
     "short": "moto-x3m",
     "src": "/moto-x3m/index.html"
-  },
-  {
-    "sn": 8,
-    "title": "Hill Car 3d",
-    "img": "https://gameforge.com/de-DE/littlegames/includes/images/games/6874_5eb3e9353fac1.jpg",
-    "description": "3d car lift hill climb game",
-    "keywords": [
-      "passenger",
-      "spot",
-      "taxi"
-    ],
-    "link": "/apps/c2",
-    "view": 1154,
-    "isAi": false,
-    "short": "card-hill-3d",
-    "src": "https://html5.gamedistribution.com/41a6b329bc394579ab300680d6bae90e/?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fgameforge.com%2Fen-US%2Flittlegames%2Fhill-climb-driving%2F"
   }
 ]
