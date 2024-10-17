@@ -1,0 +1,45 @@
+{
+	"win_result": "Track completed!",
+	"fuel_fail": "Out of fuel!",
+	"head_fail": "Watch your head!",
+	"distance": "Distance:",
+	"best_distance": "Best:",
+	"levels_completed": "Levels:",
+	"money_collected": "Money collected:",
+	"new_record": "New record!",
+	"open_level": "Unlock?",
+	"price": "Price: ",
+	"open_car": "Buy?",
+
+	"buy_up": "Upgrade?",
+
+	"max_up": "Max upgrade!",
+
+    "flip": "Flip +",
+    "backflip": "Backflip +",
+    "coins": " coins!",
+    "air": "Flying! +",
+
+	"add_more_coins": "ADD MORE COINS!",
+    "not_enough_coins": "Not enough coins!\nAdd More!",
+    "watch": "Watch the video",
+    "earn_xxx_coins": "to earn coins!",
+    "thanks_for_watching": "Thanks for watching!",
+    "you_get": "You get ",
+    "not_videos": "THANK YOU!\n\nYou watched\nall available\nvideos for today.\n\nCome back tomorrow!",
+
+	"tut": "Reach the end of the route to finish the level.\nCollect coins to buy upgrades, cars or tracks.",
+	"tut_desk": "Use the arrow keys or click the padels to navigate the car.",
+	"tut_mobile": "Use the pedals to navigate the car.",
+
+	"up_car_tyre_all": "Improves the adhesion and power delivery to the ground.",
+	"up_car_fuel_all": "Increases the capacity of the fuel tank.",
+	"up_car_susp_all": "Improves the stability at high speeds and bumps.",
+	"up_car_engine_all": "Increases power, speed and acceleration. Increases the fuel usage.",
+	"up_car_engine_no_fuel": "Increases power, speed and acceleration.",
+	"up_car_spec_complex": "A special complex upgrade for this car.",
+	"up_car_spec_jumps": "Better speed and easier control of flips while jumping.",
+	"up_car_spec_wheels": "Lifts the car for an easy mountain ride.",
+	"up_car_spec_cons": "Lowers the fuel consumption.",
+	"up_car_mega_fuel": "Increases the capacity of the fuel tank even more!" 
+}

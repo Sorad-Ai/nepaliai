@@ -1,0 +1,15 @@
+{
+  "gameSlug": "up-hill-racing",
+  "gameBuild": "1.2.6",
+  "gameID": "db640464d1104a6381c4502cec4e5e2e",
+  "gameTitle": "Up Hill Racing",
+  "interface": "SG_Hooks",
+  "leaderboardSupport": false,
+  "adsConfig": {
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 150000,
+    "enableLongGameplayAds": false,
+    "supportsAdPlayButton": false
+  }
+}

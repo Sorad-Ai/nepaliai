@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Up Hill Racing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Up Hill Racing">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- <link rel="icon" type="image/GIF" href="icon.ico"> -->
+    <script type="text/javascript" src="src/1_phaser.js"></script>
+    <script type="text/javascript" src="src/2_main.js"></script>
+    <script type="text/javascript" src="src/boot-state.js"></script>
+    <script type="text/javascript" src="src/logo-state.js"></script>
+    <script type="text/javascript" src="src/load-state.js"></script>
+    <script type="text/javascript" src="src/menu-state.js"></script>
+    <script type="text/javascript" src="src/play-state.js"></script>
+    <script type="text/javascript" src="howler.min.js"></script>
+    <script src="lib/AzerionWrapper_v2.4.6.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.gameLangs = ['en', 'de', 'es', 'fr', 'it', 'pt', 'ru', 'tr', 'nl', 'pl', 'ar'];
+        // window.gameJS = ['src/1_phaser.js', 'src/2_main.js', 'src/boot-state.js', 'src/logo-state.js', 'src/load-state.js', 'src/menu-state.js', 'src/play-state.js'];
+        // window.gameOnLoadScript = "init();";
+    </script>
+    <div id="gameContainer"></div>
+    <div id="incorrect-orientation"></div>
+    <script>
+        window.onload = function() {
+            window.onWrapperReady = () => {
+                init();
+            }
+        }
+    </script>
+</body>
+
+</html>

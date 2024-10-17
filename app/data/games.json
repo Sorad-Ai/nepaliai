@@ -138,5 +138,23 @@
     "isAi": true,
     "short": "vex-x3m",
     "src": "/vex/index.html"
+  },
+  {
+    "sn": 10,
+    "title": "Extreme Bikers",
+    "img": "/extreme-bikers/icon.jpg",
+    "description": "Vex X3M game",
+    "keywords": [
+      "game",
+      "Bike",
+      "Action",
+      "level",
+      "2d"
+    ],
+    "link": "/apps/c2",
+    "view": 1204,
+    "isAi": true,
+    "short": "extreme-bikers",
+    "src": "/extreme-bikers/index.html"
   }
 ]
