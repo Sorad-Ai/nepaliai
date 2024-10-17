@@ -121,38 +121,22 @@
     "src": "https://html5.gamedistribution.com/41a6b329bc394579ab300680d6bae90e/?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fgameforge.com%2Fen-US%2Flittlegames%2Fhill-climb-driving%2F"
   },
   {
-  "sn": 9,
-    "title": "Subway Surfers",
-    "img": "https://play-lh.googleusercontent.com/yB6RIBL4IBoqIuEmpCNEACIuRXR8SUaEy-4LfRv6uh8G4I2-j6dr9QO0U2OldwUhW3Y=w240-h480-rw",
-    "description": "Subway surfers race game",
+    "sn": 9,
+    "title": "Vex X3M",
+    "img": "/vex/assets/icon.png",
+    "description": "Vex X3M game",
     "keywords": [
-      "coin",
-      "race",
-      "police"
-    ],
-    "link": "/apps/c2",
-    "view": 1204,
-    "isAi": false,
-    "short": "subway-surfers",
-    "src": "https://szhong.4399.com/4399swf//upload_swf/ftp35/liuxinyu/20210324/jj01/index.html"
-  },
-  {
-  "sn": 10,
-    "title": "Hills of Steel",
-    "img": "https://play-lh.googleusercontent.com/FlflKi7ZDH-05b1MYMg3krQhNW5UaLle6WynSlIawYuFJxBcos84-7WgF6mhoNlDmhvZ=w240-h480-rw",
-    "description": "Tank Army war",
-    "keywords": [
-      "tank",
-      "missile",
-      "army",
+      "game",
+      "Bike",
+      "Action",
+      "Stickman",
+      "stick man",
       "2d"
     ],
     "link": "/apps/c2",
-    "view": 1254,
-    "isAi": false,
-    "short": "hills-of-steel",
-    "src": "https://kdata1.com/2024/05/hillsofsteel/"
+    "view": 1151,
+    "isAi": true,
+    "short": "vex-x3m",
+    "src": "/vex/index.html"
   }
-  
-  
 ]
