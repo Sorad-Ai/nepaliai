@@ -87,8 +87,8 @@ const AboutPage: React.FC = () => {
             <h2 style={{ marginTop: "2rem" }}>Contact Information</h2>
             <p>
               Email:{" "}
-              <a href="mailto:soradai707@gmail.com" className="text-blue">
-                soradai707@gmail.com
+              <a href="mailto:nepaliai108@gmail.com" className="text-blue">
+                nepaliai108@gmail.com
               </a>
             </p>
             <p>
