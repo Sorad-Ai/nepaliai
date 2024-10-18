@@ -143,7 +143,7 @@
     "sn": 10,
     "title": "Extreme Bikers",
     "img": "/extreme-bikers/icon.jpg",
-    "description": "Vex X3M game",
+    "description": "Extreme Bikers",
     "keywords": [
       "game",
       "Bike",
@@ -152,10 +152,10 @@
       "2d"
     ],
     "link": "/apps/c2",
-    "view": 1204,
-    "isAi": true,
+    "view": 1206,
+    "isAi": false,
     "short": "extreme-bikers",
-    "src": "/extreme-bikers/index.html"
+    "src": "https://html5.gamedistribution.com/rvvASMiM/070d0680bbe24d5aafa44d8b9b629c2d/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzA3MGQwNjgwYmJlMjRkNWFhZmE0NGQ4YjliNjI5YzJkLyIsInBhcmVudERvbWFpbiI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidG9wRG9tYWluIjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D"
   },
   {
     "sn": 11,
@@ -184,9 +184,25 @@
       "Race"
     ],
     "link": "/apps/c2",
-    "view": 1306,
+    "view": 1307,
     "isAi": false,
     "short": "bike-racing-clash",
     "src": "https://html5.gamedistribution.com/rvvASMiM/fa9581d9a3744e40b2063bf029beb068/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.1001games.com%2Frace%2Ftrial-bike-racing-clash&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy4xMDAxZ2FtZXMuY29tL3JhY2UvdHJpYWwtYmlrZS1yYWNpbmctY2xhc2giLCJwYXJlbnREb21haW4iOiIxMDAxZ2FtZXMuY29tIiwidG9wRG9tYWluIjoiMTAwMWdhbWVzLmNvbSIsImhhc0ltcHJlc3Npb24iOmZhbHNlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D"
+  },
+  {
+    "sn": 13,
+    "title": "Crazy Cars",
+    "img": "/crazy-cars/files/assets/104436510/1/CCLogoTexture.png",
+    "description": "Crazy cars racing",
+    "keywords": [
+      "3d",
+      "kids",
+      "Race"
+    ],
+    "link": "/apps/c2",
+    "view": 1359,
+    "isAi": true,
+    "short": "crazy-cars",
+    "src": "/crazy-cars/index.html"
   }
 ]

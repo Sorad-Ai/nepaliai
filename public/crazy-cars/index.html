@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <style></style>
+    <title>Crazy Cars Unblocked - ubg235 Poki</title>
+    <script src="patch/js/poki-sdk.js"></script>
+    <script src="playcanvas-stable.min.js"></script>
+    <script src="settings__.js"></script>
+</head>
+
+<body>
+    <script src="modules__.js"></script>
+    <script src="start__.js"></script>
+    <script src="loading__.js"></script>
+    <script src="js/analytics_ubg_v1_4.js"></script>
+    <script src="js/ubg235_client_v1_1.js"></script>
+
+    <script>
+        // Function to focus the element by id 't' and trigger a specific key press
+        function focusAndPressKey(keyCode, keyValue) {
+          const gameElement = document.querySelector("body");
+          if (gameElement) {
+            gameElement.focus();
+  
+            // Simulate keydown event
+            const keyPressEvent = new KeyboardEvent("keydown", {
+              key: keyValue,
+              code: keyValue,
+              keyCode: keyCode,
+              which: keyCode,
+              bubbles: true,
+              cancelable: true,
+            });
+            gameElement.dispatchEvent(keyPressEvent);
+  
+            // Introduce a delay before simulating keyup
+            setTimeout(() => {
+              // Simulate keyup event (to prevent key from being stuck)
+              const keyReleaseEvent = new KeyboardEvent("keyup", {
+                key: keyValue,
+                code: keyValue,
+                keyCode: keyCode,
+                which: keyCode,
+                bubbles: true,
+                cancelable: true,
+              });
+              gameElement.dispatchEvent(keyReleaseEvent);
+            }, 1); // Delay of 100 milliseconds
+          }
+        }
+  
+        // Listen for custom event from the parent window to trigger different key presses
+        window.addEventListener("message", (event) => {
+          switch (event.data) {
+            case "Right":
+              focusAndPressKey(39, "ArrowRight"); // Press 'ArrowRight' for Right
+              console.log("Right arrow pressed");
+              break;
+            case "Left":
+              focusAndPressKey(37, "ArrowLeft"); // Press 'ArrowLeft' for Left
+              console.log("Left arrow pressed");
+              break;
+            case "Up":
+              focusAndPressKey(38, "ArrowUp"); // Press 'ArrowUp' for Jump
+              break;
+            case "Down":
+              focusAndPressKey(40, "ArrowDown"); // Press 'ArrowDown' for Down
+              break;
+            default:
+              // Do nothing for other cases
+              break;
+          }
+        });
+      </script>
+      
+</body>
+
+</html>

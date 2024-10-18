@@ -1,2 +1,0 @@
-version = "1";
-libs = ["https://cdn.jsdelivr.net/combine/npm/@orange-games/phaser-ads@2.2/build/phaser-ads.min.js,npm/@orange-games/phaser-cachebuster@2.0/build/phaser-cachebuster.min.js,npm/@orange-games/phaser-spine@3.0/build/phaser-spine.min.js,npm/@orange-games/phaser-super-storage@1.0/build/phaser-super-storage.min.js,npm/@orange-games/splash@3.5/build/splash.min.js"];
