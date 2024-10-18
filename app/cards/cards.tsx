@@ -1,3 +1,23 @@
+'use client';
+import React, { useEffect, useState, useRef } from "react";
+import "./card-Style.css"; // Import the CSS file with updated styles
+import gamesData from "@/app/data/games.json"; // Adjust the path based on your folder structure
+import Link from "next/link";
+import Image from "next/image";
+
+interface Card {
+  sn: number;
+  title: string;
+  img: string;
+  description: string;
+  keywords: string[];
+  link: string; // Assuming this is the base URL (game.c)
+  short: string; // Add this line
+  view: number;
+  isAi: boolean; // Ensure this property exists in your Card interface
+}
+
+
 const Cards: React.FC = () => {
   const [visibleCards, setVisibleCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState<boolean>(true); // Start with true to show skeletons on first load
@@ -106,3 +126,6 @@ const Cards: React.FC = () => {
     </div>
   );
 };
+
+
+export default Cards;
