@@ -1,26 +1,6 @@
-'use client';
-import React, { useEffect, useState, useRef } from "react";
-import "./card-Style.css"; // Import the CSS file with updated styles
-import gamesData from "@/app/data/games.json"; // Adjust the path based on your folder structure
-import Link from "next/link";
-import Image from "next/image";
-
-interface Card {
-  sn: number;
-  title: string;
-  img: string;
-  description: string;
-  keywords: string[];
-  link: string; // Assuming this is the base URL (game.c)
-  short: string; // Add this line
-  view: number;
-  isAi: boolean; // Ensure this property exists in your Card interface
-}
-
-
 const Cards: React.FC = () => {
   const [visibleCards, setVisibleCards] = useState<Card[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true); // Start with true to show skeletons on first load
   const [page, setPage] = useState<number>(0);
   const observer = useRef<IntersectionObserver | null>(null);
   const loaderRef = useRef<HTMLDivElement | null>(null);
@@ -29,13 +9,17 @@ const Cards: React.FC = () => {
 
   // Initially, set the sorted cards based on view count
   useEffect(() => {
+    setLoading(true); // Show loading animation
     const sortedData = [...gamesData].sort((a, b) => b.view - a.view); // Sort by views in descending order
-    setVisibleCards(sortedData.slice(0, cardsPerPage));
-    setPage(1); // Initialize to page 1
+    setTimeout(() => {
+      setVisibleCards(sortedData.slice(0, cardsPerPage));
+      setLoading(false); // Hide loading animation after cards are loaded
+      setPage(1); // Initialize to page 1
+    }, 1000); // Simulating delay for the first load
   }, []);
 
   useEffect(() => {
-    if (loading) {
+    if (loading && page > 0) {
       const newPage = page + 1;
       const start = newPage * cardsPerPage;
       const end = start + cardsPerPage;
@@ -48,7 +32,7 @@ const Cards: React.FC = () => {
         ]);
         setLoading(false);
         setPage(newPage);
-      }, 100); // Slight delay to simulate loading
+      }, 1000); // Slight delay to simulate loading
     }
   }, [loading]);
 
@@ -83,62 +67,42 @@ const Cards: React.FC = () => {
     ));
   };
 
-  const handleCardClick = async (sn: number) => {
-    try {
-      const response = await fetch("/api/updateView", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sn }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to update view count");
-      }
-
-      const result = await response.json();
-      if (!result.success) {
-        throw new Error(result.error);
-      }
-    } catch (error) {
-      console.error("Error updating view count:", error);
-    }
-  };
-
   return (
     <div className="card-cont">
-      {visibleCards.map((card) => (
-        <Link
-          key={card.sn}
-          href={`${card.link}?src=${card.short}`} // Adjusted href here
-          className="card-div"
-          onClick={() => handleCardClick(card.sn)}
-        >
-          <Image
-            className="card-img"
-            src={card.img}
-            alt={card.title}
-            width={500} // Provide a width for the image
-            height={300} // Provide a height for the image
-          />
-          <h3
-            className="card-title"
-            style={{
-              fontSize: "15px",
-              color: card.isAi ? "white" : "yellow", // Change color based on isAi
-            }}
+      {loading && visibleCards.length === 0 ? ( // Show skeleton only if the initial load is happening
+        renderSkeletonCards()
+      ) : (
+        visibleCards.map((card) => (
+          <Link
+            key={card.sn}
+            href={`${card.link}?src=${card.short}`} // Adjusted href here
+            className="card-div"
+            onClick={() => handleCardClick(card.sn)}
           >
-            {card.title}
-          </h3>
-        </Link>
-      ))}
-  
+            <Image
+              className="card-img"
+              src={card.img}
+              alt={card.title}
+              width={500} // Provide a width for the image
+              height={300} // Provide a height for the image
+            />
+            <h3
+              className="card-title"
+              style={{
+                fontSize: "15px",
+                color: card.isAi ? "white" : "yellow", // Change color based on isAi
+              }}
+            >
+              {card.title}
+            </h3>
+          </Link>
+        ))
+      )}
+
       {/* Skeleton loader while waiting for more cards */}
       {loading && visibleCards.length >= cardsPerPage && renderSkeletonCards()}
-  
+
       <div ref={loaderRef} className="loading-placeholder"></div>
     </div>
   );
-  
 };
-
-export default Cards;
